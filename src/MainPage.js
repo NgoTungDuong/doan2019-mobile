@@ -187,7 +187,7 @@ class MainPage extends Component {
         .then(res => res.json())
         .then(data => {
           console.log(data)
-          if(data !== null) {
+          if(data.data) {
             this.setState({
               fileName: data.data.fileName,
               createdAt: data.data.createdAt,
