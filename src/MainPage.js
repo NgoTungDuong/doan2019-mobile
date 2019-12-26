@@ -45,7 +45,7 @@ class MainPage extends Component {
       transactionHash: '',
       fileSuccess: "true",
       isDuplicateFile: false,
-      loading: true,
+      loading: false,
       listIpfsHash: []
     };
   }
