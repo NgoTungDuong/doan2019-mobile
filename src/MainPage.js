@@ -191,7 +191,8 @@ class MainPage extends Component {
             this.setState({
               fileName: data.data.fileName,
               createdAt: data.data.createdAt,
-              fileHash: data.data.ipfsHash
+              fileHash: data.data.ipfsHash,
+              fileSuccess: "true"
             })
           } else {
             this.setState({
