@@ -187,11 +187,18 @@ class MainPage extends Component {
         .then(res => res.json())
         .then(data => {
           console.log(data)
-          this.setState({
-            fileName: data.data.fileName,
-            createdAt: data.data.createdAt,
-            fileHash: data.data.fileHash
-          })
+          if(data) {
+            this.setState({
+              fileName: data.data.fileName,
+              createdAt: data.data.createdAt,
+              fileHash: data.data.fileHash
+            })
+          } else {
+            this.setState({
+              fileSuccess: "false"
+            })
+          }
+          
         })
         .catch(e => console.log(e))
     } else {
