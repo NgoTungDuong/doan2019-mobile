@@ -37,7 +37,7 @@ export default class DropFile extends Component {
         return (
             <div style={{marginBottom: "15%"}}>
                 <div>
-                    <input type="file" accept="application/json" onChange={this.handleOnChange} style={{cursor: "pointer"}}/>
+                    <input type="file" onChange={this.handleOnChange} style={{cursor: "pointer"}}/>
                 </div>
                 {this.state.fileName && this.state.transactionHash ? (
                     <Link to={`/result`}>
